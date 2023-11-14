@@ -1,7 +1,7 @@
-fun fib(0) = 0
-| fib(1) = 1
-| fib(n) = fib(n-2) + fib(n-1);
+fun fib(a, b, 0) = a
+| fib(a, b, 1) = b
+| fib(a, b, c) = fib(b, a+b, c - 1) ;
 
-fib(10) = 55;
-fib(8) = 21;
-fib(2) = 1;
+fib(0,1, 10) = 55;
+fib(0,1,8) = 21;
+fib(0,1,2) = 1;
